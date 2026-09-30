@@ -13,6 +13,19 @@ npm run lint    # oxlint
 npm test        # vitest (once)
 ```
 
+## Structure
+
+```
+src/
+  data/        events.ts
+  model/       coordinates.ts, scale.ts   (pure: no React, no DOM)
+  hooks/       usePosition.ts, useInput.ts
+  components/  Track.tsx
+  App.tsx, main.tsx
+```
+
+Rule: nothing in `model/` imports React. Tests sit beside the code they cover (`model/coordinates.test.ts`).
+
 ## Coordinate model
 
 One source of truth, `pos`: a float index into the event list (`0 … N-1`). Everything else is derived from it.
@@ -23,10 +36,10 @@ input → target → (ease each frame) → pos → scale → px / year → rende
 
 | Module | Responsibility |
 | --- | --- |
-| `src/events.ts` | Event ids and years (negative = BC). Placeholder data for now. |
-| `src/coordinates.ts` | `pos ↔ year`, linear interpolation between neighbouring events. Knows nothing about pixels. |
-| `src/scale.ts` | `pos ↔ px` via `d3-scale`. Events are equally spaced (150px) by index, playhead at viewport centre. Knows nothing about time. |
-| `src/usePosition.ts` | `target → eased pos`. Inputs only write `target`; `pos` chases it by 0.18 per frame. No snapping yet. |
+| `src/data/events.ts` | Event ids and years (negative = BC). Placeholder data for now. |
+| `src/model/coordinates.ts` | `pos ↔ year`, linear interpolation between neighbouring events. Knows nothing about pixels. |
+| `src/model/scale.ts` | `pos ↔ px` via `d3-scale`. Events are equally spaced (150px) by index, playhead at viewport centre. Knows nothing about time. |
+| `src/hooks/usePosition.ts` | `target → eased pos`. Inputs only write `target`; `pos` chases it by 0.18 per frame. No snapping yet. |
 
 Equal index spacing is deliberate: time-proportional spacing would crush everything after 1498. Spacing lives behind `scale.ts`, so changing it is a one-function swap.
 
