@@ -19,7 +19,7 @@ npm test        # vitest (once)
 src/
   data/        events.ts
   model/       coordinates.ts, scale.ts   (pure: no React, no DOM)
-  hooks/       usePosition.ts, useInput.ts
+  hooks/       usePosition.ts, useInput.ts, useViewportWidth.ts
   components/  Track.tsx
   App.tsx, main.tsx
 ```
@@ -49,9 +49,9 @@ Equal index spacing is deliberate: time-proportional spacing would crush everyth
 - [x] `coordinates.ts`
 - [x] `scale.ts`
 - [x] `usePosition.ts`
-- [ ] `useInput.ts` — wheel, pointer drag, arrows
-- [ ] `Track.tsx` — track, event ticks, fixed playhead
-- [ ] `App.tsx` — year readout, debug panel (`pos` / `target` / interaction state)
+- [x] `useInput.ts` — wheel, pointer drag, arrows
+- [x] `Track.tsx` — track, event ticks, fixed playhead
+- [x] `App.tsx` — year readout, debug panel (`pos` / `target` / interaction state)
 - [ ] Tests — coordinate and scale math
 - [ ] Tune motion
 - [ ] Experiment with snapping

@@ -1,2 +1,84 @@
+:root {
+  --bg: #f2eee6;
+  --ink: #1d1a16;
+  --muted: #8a8174;
+  --rule: #d9d2c5;
+}
+
 html, body, #root { margin: 0; height: 100%; }
-body { background: #f2eee6; color: #1d1a16; }
+body { background: var(--bg); color: var(--ink); }
+
+.app {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  overflow: hidden;
+  user-select: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px 40px;
+}
+
+.year {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  font: 400 clamp(110px, 15vw, 230px) / 0.85 'Instrument Serif', Georgia, serif;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+.era { font-size: 0.3em; }
+
+.debug {
+  margin: 0;
+  font: 12px / 1.6 ui-monospace, 'IBM Plex Mono', monospace;
+  color: var(--muted);
+}
+
+.track {
+  position: relative;
+  height: 150px;
+  border-top: 1px solid var(--rule);
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+.track--dragging { cursor: grabbing; }
+
+.playhead {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: var(--ink);
+}
+.playhead::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid var(--ink);
+}
+
+.strip { position: absolute; inset: 0; will-change: transform; }
+.tick {
+  position: absolute;
+  top: 56px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  margin-left: -8px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--bg);
+}
