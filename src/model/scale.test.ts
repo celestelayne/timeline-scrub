@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
-import { createPxScale, EVENT_SPACING } from './scale'
+import { config } from '../config'
+import { createPxScale } from './scale'
+
+const EVENT_SPACING = config.eventSpacing
 
 describe('createPxScale', () => {
   const width = 1000

@@ -1,11 +1,13 @@
-import { useMemo } from 'react'
+import { useMemo, useReducer } from 'react'
 import { Track } from './components/Track'
+import { TuningPanel } from './components/TuningPanel'
 import { YEARS } from './data/events'
 import { useInput } from './hooks/useInput'
 import { usePosition } from './hooks/usePosition'
 import { useViewportWidth } from './hooks/useViewportWidth'
 import { posToYear } from './model/coordinates'
-import { createPxScale, EVENT_SPACING } from './model/scale'
+import { config } from './config'
+import { createPxScale } from './model/scale'
 
 function formatYear(year: number): { value: string; era: string } {
   const y = Math.round(year)
@@ -15,10 +17,12 @@ function formatYear(year: number): { value: string; era: string } {
 }
 
 export default function App() {
+  const [, rerender] = useReducer((n: number) => n + 1, 0)
+  const { eventSpacing } = config
   const { pos, target, setTarget } = usePosition(YEARS.length)
-  const { interaction, trackProps } = useInput({ target, setTarget, spacing: EVENT_SPACING })
+  const { interaction, trackProps } = useInput({ target, setTarget, spacing: eventSpacing })
   const width = useViewportWidth()
-  const scale = useMemo(() => createPxScale(width), [width])
+  const scale = useMemo(() => createPxScale(width, eventSpacing), [width, eventSpacing])
 
   const { value, era } = formatYear(posToYear(pos, YEARS))
 
@@ -36,6 +40,7 @@ active      ${Math.round(pos)} / ${YEARS.length - 1}
 interaction ${interaction}`}
         </pre>
       </main>
+      <TuningPanel onChange={rerender} />
       <Track pos={pos} count={YEARS.length} scale={scale} dragging={interaction === 'drag'} trackProps={trackProps} />
     </div>
   )

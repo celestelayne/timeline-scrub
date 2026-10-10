@@ -82,3 +82,30 @@ body { background: var(--bg); color: var(--ink); }
   border-radius: 50%;
   background: var(--bg);
 }
+
+.tuning {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  display: grid;
+  gap: 6px;
+  font: 11px / 1 ui-monospace, 'IBM Plex Mono', monospace;
+  color: var(--muted);
+}
+.tuning label {
+  display: grid;
+  grid-template-columns: 96px 140px 36px;
+  align-items: center;
+  gap: 8px;
+}
+.tuning input { accent-color: var(--ink); }
+.tuning output { text-align: right; color: var(--ink); }
+.tuning button {
+  justify-self: end;
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 1px solid var(--rule);
+  padding: 3px 8px;
+  cursor: pointer;
+}

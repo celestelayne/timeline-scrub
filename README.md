@@ -53,7 +53,11 @@ Equal index spacing is deliberate: time-proportional spacing would crush everyth
 - [x] `Track.tsx` — track, event ticks, fixed playhead
 - [x] `App.tsx` — year readout, debug panel (`pos` / `target` / interaction state)
 - [x] Tests — coordinate and scale math
-- [ ] Tune motion
-- [ ] Experiment with snapping
+- [x] Motion tuning tooling — `src/config.ts` and a live tuning panel (`ease`, `wheelDivisor`, `eventSpacing`)
 
 Event content, images, categories, fonts, persistence, and responsive layout come in later milestones.
+
+## Deferred to the end
+
+- [ ] Pick final motion values with the tuning panel, put them in `defaults` in `src/config.ts`, then remove the panel
+- [ ] Experiment with snapping

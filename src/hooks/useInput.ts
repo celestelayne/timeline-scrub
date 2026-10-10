@@ -1,12 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { PointerEvent } from 'react'
+import { config } from '../config'
 
 export type Interaction = 'idle' | 'wheel' | 'drag' | 'key'
-
-const WHEEL_DIVISOR = 220 // wheel delta px per event index
-const DRAG_THRESHOLD = 4 // px before a press becomes a drag
-const WHEEL_IDLE_MS = 150
-const KEY_IDLE_MS = 200
 
 type SetTarget = (update: number | ((prev: number) => number)) => void
 
@@ -39,10 +35,10 @@ export function useInput({ target, setTarget, spacing }: Options) {
     const onWheel = (e: WheelEvent) => {
       e.preventDefault()
       const delta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY
-      setTarget((t) => t + delta / WHEEL_DIVISOR)
+      setTarget((t) => t + delta / config.wheelDivisor)
       if (!drag.current?.active) {
         setInteraction('wheel')
-        settle(WHEEL_IDLE_MS)
+        settle(config.wheelIdleMs)
       }
     }
 
@@ -54,7 +50,7 @@ export function useInput({ target, setTarget, spacing }: Options) {
       setTarget((t) => Math.round(t) + dir)
       if (!drag.current?.active) {
         setInteraction('key')
-        settle(KEY_IDLE_MS)
+        settle(config.keyIdleMs)
       }
     }
 
@@ -78,7 +74,7 @@ export function useInput({ target, setTarget, spacing }: Options) {
       if (!d || d.id !== e.pointerId) return
       const dx = e.clientX - d.startX
       if (!d.active) {
-        if (Math.abs(dx) <= DRAG_THRESHOLD) return
+        if (Math.abs(dx) <= config.dragThreshold) return
         d.active = true
         setInteraction('drag')
       }

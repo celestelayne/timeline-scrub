@@ -1,7 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-
-const EASE = 0.18
-const EPSILON = 0.001
+import { config } from '../config'
 
 type Update = number | ((prev: number) => number)
 
@@ -18,7 +16,7 @@ export function usePosition(count: number, initial = 0) {
 
   const tick = useCallback(function step() {
     const delta = targetRef.current - posRef.current
-    posRef.current = Math.abs(delta) < EPSILON ? targetRef.current : posRef.current + delta * EASE
+    posRef.current = Math.abs(delta) < config.settleEpsilon ? targetRef.current : posRef.current + delta * config.ease
     setPos(posRef.current)
     raf.current = posRef.current === targetRef.current ? 0 : requestAnimationFrame(step)
   }, [])
