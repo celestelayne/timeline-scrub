@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { YEARS } from '../data/events'
+import { YEARS } from '../data/markers'
 import { computeGaps, formatGap } from './gaps'
 
 describe('formatGap', () => {
@@ -35,9 +35,9 @@ describe('computeGaps', () => {
     expect(computeGaps([0, 100])[0].label).toBe('100 yrs')
   })
 
-  it('labels exactly the six long gaps in the real data', () => {
-    const labelled = computeGaps(YEARS).filter((g) => g.label)
-    expect(labelled.map((g) => g.years)).toEqual([3750, 500, 400, 650, 198, 247])
-    expect(labelled.map((g) => g.index)).toEqual([0, 1, 2, 3, 4, 7])
+  it('labels exactly the gaps at or above the threshold in the synced data', () => {
+    const gaps = computeGaps(YEARS, 100)
+    expect(gaps).toHaveLength(YEARS.length - 1)
+    gaps.forEach((g) => expect(g.label !== null).toBe(g.years >= 100))
   })
 })

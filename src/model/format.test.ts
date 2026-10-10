@@ -1,5 +1,4 @@
 import { describe, expect, it } from 'vitest'
-import { EVENTS } from '../data/events'
 import { eventLabel, yearLabel, yearParts } from './format'
 
 describe('yearParts', () => {
@@ -39,16 +38,5 @@ describe('eventLabel', () => {
 
   it('prefers the typed date', () => {
     expect(eventLabel({ year: 650, date: 'c. AD 650' })).toBe('c. AD 650')
-  })
-})
-
-describe('events data', () => {
-  it('has unique ids and ascending years', () => {
-    expect(new Set(EVENTS.map((e) => e.id)).size).toBe(EVENTS.length)
-    EVENTS.slice(1).forEach((e, i) => expect(e.year).toBeGreaterThan(EVENTS[i].year))
-  })
-
-  it('only types a date where it differs from the generated label', () => {
-    EVENTS.filter((e) => e.date).forEach((e) => expect(e.date).not.toBe(eventLabel({ year: e.year })))
   })
 })

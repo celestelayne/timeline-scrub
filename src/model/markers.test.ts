@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import { EVENTS } from '../data/events'
+import { MARKERS } from '../data/markers'
+import events from '../data/events.json'
 import { groupMarkers } from './markers'
 
 const ev = (year: number, date?: string, title = String(year)) => ({ year, date, title })
@@ -41,8 +42,13 @@ describe('groupMarkers', () => {
   })
 })
 
-describe('with the current hand-typed events', () => {
-  it('yields one Marker per event, since every year is distinct', () => {
-    expect(groupMarkers(EVENTS)).toHaveLength(EVENTS.length)
+describe('the synced Markers', () => {
+  it('hold every event exactly once', () => {
+    expect(MARKERS.flatMap((m) => m.events)).toHaveLength(events.length)
+  })
+
+  it('have strictly ascending years, and every event matches its Marker', () => {
+    MARKERS.slice(1).forEach((m, i) => expect(m.year).toBeGreaterThan(MARKERS[i].year))
+    MARKERS.forEach((m) => m.events.forEach((e) => expect(e.year).toBe(m.year)))
   })
 })

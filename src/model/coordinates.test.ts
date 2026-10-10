@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { YEARS } from '../data/events'
+import { YEARS } from '../data/markers'
 import { posToYear, yearToPos } from './coordinates'
 
 const years = [-4000, -250, 250, 650]
