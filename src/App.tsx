@@ -6,15 +6,9 @@ import { useInput } from './hooks/useInput'
 import { usePosition } from './hooks/usePosition'
 import { useViewportWidth } from './hooks/useViewportWidth'
 import { posToYear } from './model/coordinates'
+import { yearParts } from './model/format'
 import { config } from './config'
 import { createPxScale } from './model/scale'
-
-function formatYear(year: number): { value: string; era: string } {
-  const y = Math.round(year)
-  if (y < 0) return { value: String(-y), era: 'BC' }
-  if (y < 1000) return { value: String(y), era: 'AD' }
-  return { value: String(y), era: '' }
-}
 
 export default function App() {
   const [, rerender] = useReducer((n: number) => n + 1, 0)
@@ -24,7 +18,7 @@ export default function App() {
   const width = useViewportWidth()
   const scale = useMemo(() => createPxScale(width, eventSpacing), [width, eventSpacing])
 
-  const { value, era } = formatYear(posToYear(pos, YEARS))
+  const { value, era } = yearParts(posToYear(pos, YEARS))
 
   return (
     <div className="app">
