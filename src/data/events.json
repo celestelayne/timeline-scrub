@@ -1,0 +1,767 @@
+[
+  {
+    "id": "early-archaic-settlement-of-trinidad",
+    "year": -5900,
+    "date": "c. 5900 BC",
+    "title": "Early Archaic settlement of Trinidad",
+    "body": [
+      "Early Archaic communities settled Trinidad from the nearby South American mainland."
+    ],
+    "period": "Archaic (pre-ceramic)",
+    "culturalSeries": "Ortoiroid",
+    "place": "Trinidad and Tobago"
+  },
+  {
+    "id": "earliest-known-occupation-of-banwari-trace",
+    "year": -5900,
+    "date": "c. 5900 BC",
+    "title": "Earliest known occupation of Banwari Trace",
+    "body": [
+      "Banwari Trace contains the oldest currently known archaeological evidence of human settlement in the West Indies. It's earliest midden deposits date to approximately 7800–7900 cal BP, or c. 5900 BC."
+    ],
+    "period": "Archaic (pre-ceramic)",
+    "culturalSeries": "Ortoiroid",
+    "place": "San Francique, southwestern Trinidad",
+    "site": "Banwari Trace Archaeological Site",
+    "source": "Tankersley et al. (2018), “Geochronology and Paleoenvironmental Framework for the Oldest Archaeological Site…,” Latin American Antiquity 29(4): 681–695. https://doi.org/10.1017/laq.2018.49"
+  },
+  {
+    "id": "early-plant-cultivation-at-st-john",
+    "year": -5800,
+    "date": "c. 5800 BC",
+    "title": "Early plant cultivation at St. John",
+    "body": [
+      "Starch residues on grindstones show that early communities processed maize, sweet potato, chili pepper, yams and other plants by approximately 7790 cal BP."
+    ],
+    "period": "Archaic (pre-ceramic)",
+    "culturalSeries": "Ortoiroid",
+    "place": "Southwestern Trinidad",
+    "site": "St. John",
+    "source": "Pagán-Jiménez, Jaime R., Reniel Rodríguez-Ramos, Basil A. Reid, Martijn van den Bel, and Corinne L. Hofman. 2015. “Early Dispersals of Maize and Other Food Plants into the Southern Caribbean and Northeastern South America.” Quaternary Science Reviews 123: 231–246."
+  },
+  {
+    "id": "occupation-of-ortoire",
+    "year": -800,
+    "date": "c. 800 BC",
+    "title": "Occupation of Ortoire",
+    "body": [
+      "Late Archaic communities occupied the Ortoire shell-midden complex, the type site from which the archaeological name “Ortoiroid” was derived."
+    ],
+    "period": "Late Archaic (pre-ceramic)",
+    "culturalSeries": "Ortoiroid / Ortoiran",
+    "place": "Southeastern Trinidad",
+    "site": "Ortoire"
+  },
+  {
+    "id": "saladoid-settlement-of-trinidad",
+    "year": -300,
+    "date": "c. 300 BC",
+    "title": "Saladoid settlement of Trinidad",
+    "body": [
+      "Saladoid communities established settlements in Trinidad and produced distinctive ceramics. The earliest local expression is known as the Cedros complex; it later developed into the more widespread Palo Seco complex."
+    ],
+    "period": "Early Ceramic Age",
+    "culturalSeries": "Saladoid",
+    "place": "Southwestern Trinidad",
+    "site": "Cedros",
+    "source": "Boomert, Faber-Morse and Rouse (2013), The 1946 and 1953 Yale University Excavations in Trinidad, Yale University Publications in Anthropology 92"
+  },
+  {
+    "id": "emergence-of-the-erin-complex",
+    "year": 500,
+    "date": "c. AD 500",
+    "title": "Emergence of the Erin complex",
+    "body": [
+      "Barrancoid ceramic traditions from the Lower Orinoco became integrated with Trinidad’s existing Late Palo Seco tradition. Both pottery traditions were made and used together, suggesting exchange, coexistence and likely intermarriage."
+    ],
+    "period": "Early Ceramic Age",
+    "culturalSeries": "Barrancoid",
+    "place": "Southern Trinidad",
+    "site": "Erin, Palo Seco and Quinam"
+  },
+  {
+    "id": "emergence-of-the-bontour-complex",
+    "year": 650,
+    "date": "c. AD 650–800",
+    "title": "Emergence of the Bontour complex",
+    "body": [
+      "A new local ceramic complex developed through interaction between Trinidad and Arauquinoid communities of the Lower Orinoco. Bontour pottery was generally shell-tempered and minimally decorated."
+    ],
+    "period": "Late Ceramic Age",
+    "culturalSeries": "Guayabitoid / Arauquinoid",
+    "place": "Trinidad",
+    "site": "Bontour"
+  },
+  {
+    "id": "bontour-settlements-expand-across-trinidad",
+    "year": 800,
+    "date": "c. AD 800",
+    "title": "Bontour settlements expand across Trinidad",
+    "body": [
+      "Bontour settlements became widespread along the coast and inland, indicating increasing population density and island-wide exchange."
+    ],
+    "period": "Late Ceramic Age",
+    "culturalSeries": "Guayabitoid / Arauquinoid",
+    "place": "Trinidad",
+    "site": "Manzanilla, Icacos and Bontour"
+  },
+  {
+    "id": "emergence-of-the-mayoid-tradition",
+    "year": 1300,
+    "date": "c. AD 1300–1400",
+    "title": "Emergence of the Mayoid tradition",
+    "body": [
+      "The Mayoid ceramic tradition reached Trinidad from the Guiana coastal region several centuries before European contact. It overlapped with the older Bontour complex and featured thin-walled bowls and necked jars with minimal decoration."
+    ],
+    "period": "Late Ceramic Age",
+    "culturalSeries": "Mayoid",
+    "place": "Trinidad",
+    "site": "St. Bernard",
+    "source": "Boomert, Arie. 2016. The Indigenous Peoples of Trinidad and Tobago: From the First Settlers Until Today"
+  },
+  {
+    "id": "columbus-encounters-trinidad",
+    "year": 1498,
+    "date": "31 July 1498",
+    "title": "Columbus encounters Trinidad",
+    "body": [
+      "During his third voyage, Christopher Columbus sighted Trinidad, named the island “Trinidad,” and recorded houses and people near the southeastern coast."
+    ],
+    "period": "Contact period",
+    "place": "Southeastern Trinidad",
+    "site": "Cape Galea, now Galeota Point",
+    "source": "Columbus, Christopher. 1498. “Narrative of the Third Voyage,” in Select Letters of Christopher Columbus, trans. R. H. Major, 1870, pp. 108–174"
+  },
+  {
+    "id": "spanish-crown-authorizes-indigenous-enslavement",
+    "year": 1511,
+    "date": "24 December 1511",
+    "title": "Spanish Crown authorizes Indigenous enslavement",
+    "body": [
+      "A royal order classified Trinidad and several Lesser Antillean islands as “Carib” territories, authorizing Spanish colonists to wage war, capture inhabitants and enslave them. Trinidad subsequently became a target of raids connected to the pearl fisheries around Margarita and Cubagua."
+    ],
+    "period": "Early colonial period",
+    "place": "Trinidad and the southern Caribbean",
+    "source": "“Licencia para hacer guerra a los caribes,” 24 Dec. 1511, Archivo General de Indias, Indiferente General 418, L.3, fol. 91r"
+  },
+  {
+    "id": "antonio-sedeno-appointed-governor",
+    "year": 1530,
+    "date": "12 July 1530",
+    "title": "Antonio Sedeño appointed governor",
+    "body": [
+      "The Spanish Crown appointed Antonio Sedeño captain and governor-general of Trinidad and authorized him to establish a colony. He arrived on 8 November 1530 with two ships and approximately seventy men."
+    ],
+    "period": "Early colonial period",
+    "place": "Trinidad",
+    "site": "Erin",
+    "source": "Fernández de Oviedo, Historia general y natural de las Indias, vol. II, book 24, chapters 2–4"
+  },
+  {
+    "id": "first-battle-of-cumucurapo",
+    "year": 1532,
+    "date": "1532",
+    "title": "First Battle of Cumucurapo",
+    "body": [
+      "After Sedeño’s forces raided Indigenous food supplies, communities around Cumucurapo resisted the attempted settlement. The Spaniards destroyed the village but lacked provisions and withdrew to Margarita."
+    ],
+    "period": "Early colonial period",
+    "place": "Northwestern Trinidad",
+    "site": "Cumucurapo, present-day Mucurapo",
+    "source": "Aguado, Recopilación historial, part II, book 4"
+  },
+  {
+    "id": "second-battle-of-cumucurapo",
+    "year": 1533,
+    "date": "13 September 1533",
+    "title": "Second Battle of Cumucurapo",
+    "body": [
+      "Sedeño returned and constructed a fortified settlement at Cumucurapo. Indigenous forces attacked it; the Spaniards held the position and rebuilt their defenses."
+    ],
+    "period": "Early colonial period",
+    "place": "Northwestern Trinidad",
+    "site": "Cumucurapo",
+    "source": "Aguado, Recopilación historial, part II, book 4"
+  },
+  {
+    "id": "sedeno-abandons-cumucurapo",
+    "year": 1534,
+    "date": "1534",
+    "title": "Sedeño abandons Cumucurapo",
+    "body": [
+      "Unable to sustain the colony or retain enough settlers, Sedeño withdrew. Spain did not establish a lasting settlement in Trinidad during this attempt."
+    ],
+    "period": "Early colonial period",
+    "place": "Northwestern Trinidad",
+    "site": "Cumucurapo",
+    "source": "National Trust of Trinidad and Tobago, “T&T History Timeline”"
+  },
+  {
+    "id": "roume-de-saint-laurent-visits-trinidad",
+    "year": 1777,
+    "date": "1777",
+    "title": "Roume de Saint-Laurent visits Trinidad",
+    "body": [
+      "Grenada planter Philippe-Rose Roume de Saint-Laurent visited Trinidad and assessed its prospects for settlement and plantation development. His reports and lobbying proposed attracting Roman Catholic settlers from other Caribbean colonies, contributing to the policy later formalized in the 1783 Cédula."
+    ],
+    "period": "Spanish colonial period",
+    "place": "Trinidad",
+    "source": "Roume de Saint-Laurent, “Report to Lord Macartney, Governor of Grenada, of His Visit to Trinidad,” 1777, Colonial Office records, CO 101/20, reproduced as Publication No. 604"
+  },
+  {
+    "id": "cedula-of-population-issued",
+    "year": 1783,
+    "date": "24 November 1783",
+    "title": "Cédula of Population issued",
+    "body": [
+      "The Spanish Crown offered land and tax incentives to foreign Roman Catholics who settled in Trinidad. White settlers received approximately 32 acres and additional land for each enslaved person they introduced; free Black and mixed-race household heads received half the allocation offered to white settlers. The policy accelerated migration from the French Caribbean and expanded plantation slavery."
+    ],
+    "period": "Spanish colonial period",
+    "place": "Trinidad",
+    "source": "Charles III of Spain, Real Cédula para la población y comercio de la isla de Trinidad, 24 November 1783; English translation in Report of the Commissioners of Inquiry into Titles to Lands in Trinidad, 1827, pp. 191–194",
+    "media": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Charles_III_of_Spain_high_resolution.jpg/500px-Charles_III_of_Spain_high_resolution.jpg"
+  },
+  {
+    "id": "chacon-begins-implementing-the-cedula",
+    "year": 1784,
+    "date": "1784",
+    "title": "Chacón begins implementing the Cédula",
+    "body": [
+      "Governor José María Chacón arrived to administer immigration and land grants. He transferred the Cabildo from St Joseph to the growing settlement of Port of Spain."
+    ],
+    "period": "Spanish colonial period",
+    "place": "Port-of-Spain",
+    "site": "Cabildo",
+    "source": "NALIS, “Local Government”"
+  },
+  {
+    "id": "early-sugar-production-expands",
+    "year": 1787,
+    "date": "1787",
+    "title": "Early sugar production expands",
+    "body": [
+      "French planter Picot de Lapeyrouse established an early sugar mill at the Tragarete estate. New estates producing sugar, cotton, coffee and cocoa expanded alongside enslaved African labour."
+    ],
+    "period": "Spanish colonial period",
+    "place": "Northwestern Trinidad",
+    "site": "Tragarete estate",
+    "source": "Caribbean Library Journal, vol. 3"
+  },
+  {
+    "id": "french-caribbean-migration-accelerates",
+    "year": 1789,
+    "date": "1789–1790s",
+    "title": "French Caribbean migration accelerates",
+    "body": [
+      "Revolutionary unrest in the French Caribbean encouraged additional migration to Trinidad. French and French Creole became widely spoken, while plantation agriculture and enslavement expanded."
+    ],
+    "period": "Spanish colonial period",
+    "place": "Trinidad",
+    "site": "Port of Spain and plantation districts",
+    "source": "UWI, “Patois History”"
+  },
+  {
+    "id": "small-sephardic-jewish-presence",
+    "year": 1790,
+    "date": "Late 1700s–1800s",
+    "title": "Small Sephardic Jewish presence",
+    "body": [
+      "A small number of Sephardic Jewish merchants and families arrived from Suriname, Curaçao, Iberian and South American networks. Intermarriage and assimilation prevented the formation of a lasting organized congregation."
+    ],
+    "period": "Spanish/British colonial period",
+    "place": "Trinidad",
+    "source": "Joanna Newman, Nearly the New World: The British West Indies and the Flight from Nazism, 1933–1945 (2019); Jewish Telegraphic Agency, “The Jews of Trinidad”"
+  },
+  {
+    "id": "san-fernando-established-as-a-town",
+    "year": 1792,
+    "date": "1792",
+    "title": "San Fernando established as a town",
+    "body": [
+      "Governor Chacón declared San Fernando a town as settlement and plantation agriculture expanded in southern Trinidad."
+    ],
+    "period": "Spanish colonial period",
+    "place": "Southern Trinidad",
+    "site": "San Fernando",
+    "source": "NALIS, “Historical Sketch of San Fernando”"
+  },
+  {
+    "id": "french-speaking-society-under-british-rule",
+    "year": 1797,
+    "date": "1797",
+    "title": "French-speaking society under British rule",
+    "body": [
+      "Britain captured Trinidad from Spain. The island entered British rule with a large French-speaking population, approximately 10,000 enslaved people and more than 4,000 free Black and mixed-race inhabitants."
+    ],
+    "period": "End of Spanish rule",
+    "place": "Trinidad",
+    "site": "Port-of-Spain",
+    "source": "Contemporary 1797 census figures summarized in Trinidad historical records"
+  },
+  {
+    "id": "british-forces-capture-trinidad",
+    "year": 1797,
+    "date": "18 February 1797",
+    "title": "British forces capture Trinidad",
+    "body": [
+      "A British expedition under Sir Ralph Abercromby took Trinidad from Spain; Governor José María Chacón surrendered, and Britain installed Thomas Picton as governor."
+    ],
+    "period": "British conquest",
+    "place": "Port-of-Spain",
+    "source": "National Trust timeline; contemporary treaty context"
+  },
+  {
+    "id": "treaty-of-amiens-formalizes-british-rule",
+    "year": 1802,
+    "date": "25 March 1802",
+    "title": "Treaty of Amiens formalizes British rule",
+    "body": [
+      "Spain ceded Trinidad to Britain in full sovereignty. British rule retained much of the island’s French-speaking population and Spanish legal inheritance."
+    ],
+    "period": "British colonial period",
+    "source": "Treaty of Amiens, Article IV"
+  },
+  {
+    "id": "first-chinese-migrants-arrive-on-the-fortitude",
+    "year": 1806,
+    "date": "12 October 1806",
+    "title": "First Chinese migrants arrive on the Fortitude",
+    "body": [
+      "The East India Company ship Fortitude arrived with 192 Chinese migrants recruited through Macao, Penang and Canton. This was the first recorded organized Chinese migration to Trinidad."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "site": "Port-of-Spain harbour",
+    "source": "Walton Look Lai, “The Chinese in Trinidad, 1806–1838,” Caribbean Quarterly"
+  },
+  {
+    "id": "colonial-government-frames-chinese-migration-as-free-cultivators",
+    "year": 1806,
+    "date": "1 November 1806",
+    "title": "Colonial government frames Chinese migration as “free cultivators”",
+    "body": [
+      "Governor Thomas Hislop issued a proclamation presenting the newcomers as free agricultural labourers, part of Britain’s effort to develop Trinidad’s plantation economy."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad",
+    "source": "Hislop proclamation, 1806, quoted in The Chinese in Trinidad, 1806–1838"
+  },
+  {
+    "id": "first-migration-experiment-breaks-down",
+    "year": 1807,
+    "date": "1807–1810",
+    "title": "First migration experiment breaks down",
+    "body": [
+      "The original group faced illness, conflict and plantation conditions; 61 left Trinidad in 1807, and only 22 reportedly remained by 1810. This was not yet a continuous settler community."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad",
+    "source": "Walton Look Lai, “The Chinese in Trinidad, 1806–1838,” Caribbean Quarterly"
+  },
+  {
+    "id": "great-fire-of-port-of-spain",
+    "year": 1808,
+    "date": "24 March 1808",
+    "title": "Great Fire of Port of Spain",
+    "body": [
+      "A fire destroyed much of Port of Spain. In its aftermath, colonial authorities introduced building regulations and rebuilt major public structures in brick."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "source": "Parliament of Trinidad and Tobago"
+  },
+  {
+    "id": "britain-abolishes-the-transatlantic-slave-trade",
+    "year": 1808,
+    "date": "1807–1808",
+    "title": "Britain abolishes the transatlantic slave trade",
+    "body": [
+      "Britain abolished its legal transatlantic slave trade in 1807. British naval patrols thereafter intercepted illegal slave ships, and some liberated Africans were brought to Trinidad."
+    ],
+    "period": "Slavery and resistance",
+    "place": "National Trust timeline",
+    "source": "National Trust timeline"
+  },
+  {
+    "id": "first-documented-portuguese-arrivals",
+    "year": 1834,
+    "date": "7 December 1834",
+    "title": "First documented Portuguese arrivals",
+    "body": [
+      "The Stralhista arrived from Madeira with 28 passengers, marking the earliest documented Madeiran Portuguese arrival in Trinidad."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "site": "Port-of-Spain harbour",
+    "source": "Jo-Anne S. Ferreira, The Portuguese of Trinidad and Tobago; Portuguese community timeline"
+  },
+  {
+    "id": "slavery-abolished-apprenticeship-ends",
+    "year": 1834,
+    "date": "1834–1838",
+    "title": "Slavery abolished; apprenticeship ends",
+    "body": [
+      "Enslavement formally ended in British colonies in 1834; Trinidad’s apprenticeship system ended in 1838, completing legal emancipation."
+    ],
+    "period": "Emancipation",
+    "place": "Trinidad",
+    "source": "British emancipation records / Trinidad historical timeline"
+  },
+  {
+    "id": "indian-indentureship-begins",
+    "year": 1845,
+    "date": "1845",
+    "title": "Indian indentureship begins",
+    "body": [
+      "The Fatel Razack arrived on 30 May with the first group of Indian indentured labourers, beginning a major migration that reshaped Trinidad."
+    ],
+    "period": "Indentureship",
+    "place": "Port-of-Spain",
+    "source": "National Trust timeline"
+  },
+  {
+    "id": "madeiran-protestant-refugees-arrive",
+    "year": 1846,
+    "date": "September–November 1846",
+    "title": "Madeiran Protestant refugees arrive",
+    "body": [
+      "Several ships carried Madeiran Presbyterian refugees expelled amid religious persecution. Many joined Greyfriars Church in Port of Spain; many also left Trinidad for the United States by 1849."
+    ],
+    "period": "British colonial period",
+    "site": "Greyfriars Church, Frederick Street",
+    "source": "Passenger lists and church-history record"
+  },
+  {
+    "id": "madeiran-contract-labour-migration-begins",
+    "year": 1846,
+    "date": "9 May 1846",
+    "title": "Madeiran contract labour migration begins",
+    "body": [
+      "The Senator arrived from Madeira with 219 contract labourers. British colonial authorities recruited Madeirans amid labour shortages after emancipation."
+    ],
+    "period": "Post-emancipation migration",
+    "source": "Ferreira, The Portuguese of Trinidad and Tobago; UWI research on Madeiran migration"
+  },
+  {
+    "id": "portuguese-settlers-enter-small-trade",
+    "year": 1846,
+    "date": "1846–1860s",
+    "title": "Portuguese settlers enter small trade",
+    "body": [
+      "Some Madeiran migrants left contract labour for small business—opening dry-goods shops, rum shops and other enterprises. The community built commercial networks in Port of Spain and throughout Trinidad."
+    ],
+    "period": "Post-emancipation migration",
+    "place": "Trinidad",
+    "site": "Port of Spain commercial district",
+    "source": "Ferreira, The Portuguese of Trinidad and Tobago; UWI research on Madeiran migration"
+  },
+  {
+    "id": "chinese-indentured-immigration-resumes",
+    "year": 1853,
+    "date": "1853",
+    "title": "Chinese indentured immigration resumes",
+    "body": [
+      "Colonial correspondence documents a new introduction of Chinese indentured workers to Trinidad and British Guiana as planters sought labour after the end of apprenticeship in 1838."
+    ],
+    "period": "Post-emancipation migration",
+    "place": "Trinidad",
+    "source": "British Parliamentary Papers, Copies or Extracts of Despatches Relating to Chinese Immigrants…, 1853"
+  },
+  {
+    "id": "larger-chinese-immigration-programme-begins",
+    "year": 1866,
+    "date": "1866",
+    "title": "Larger Chinese immigration programme begins",
+    "body": [
+      "A later and more sustained immigration wave brought Chinese labourers to Trinidad under indenture, contributing to the foundations of the present-day Chinese-Trinidadian community."
+    ],
+    "period": "British colonial period",
+    "source": "Walton Look Lai, The Chinese in the West Indies, 1806–1995"
+  },
+  {
+    "id": "portuguese-community-expands",
+    "year": 1880,
+    "date": "Late 1800s",
+    "title": "Portuguese community expands",
+    "body": [
+      "Continued migration and family settlement created communities in Port of Spain, Arima, Arouca, Chaguanas and San Fernando. By the end of the nineteenth century, the Madeiran community numbered roughly 2,000."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad and Tobago",
+    "site": "Port of Spain; San Fernando; Arima",
+    "source": "Ferreira, The Portuguese of Trinidad and Tobago; UWI research on Madeiran migration"
+  },
+  {
+    "id": "chinese-migrants-build-retail-and-commercial-networks",
+    "year": 1880,
+    "date": "Late 1800s–early 1900s",
+    "title": "Chinese migrants build retail and commercial networks",
+    "body": [
+      "As indentures ended, many Chinese Trinidadians moved into shopkeeping, food retail, trades and small business. Kinship and credit networks supported movement from rural districts into towns."
+    ],
+    "period": "British colonial period",
+    "site": "Port of Spain, San Fernando, Arima",
+    "source": "National Library and Information System Authority, Chinese heritage resources"
+  },
+  {
+    "id": "trinidad-and-tobago-united-administratively",
+    "year": 1889,
+    "date": "1889",
+    "title": "Trinidad and Tobago united administratively",
+    "body": [
+      "Britain united Trinidad and Tobago into a single colony, a political arrangement that continued until independence."
+    ],
+    "period": "British colonial period",
+    "source": "West India Committee"
+  },
+  {
+    "id": "chain-migration-and-community-continuity",
+    "year": 1900,
+    "date": "1900–1975",
+    "title": "Chain migration and community continuity",
+    "body": [
+      "Migration continued from Madeira and through other Caribbean territories, while Portuguese Trinidadians expanded into commerce, food production and professional life."
+    ],
+    "period": "British and post-independence periods",
+    "place": "Trinidad and Tobago",
+    "site": "Port of Spain; Scarborough",
+    "source": "Ferreira, The Portuguese of Trinidad and Tobago"
+  },
+  {
+    "id": "first-documented-syrian-and-lebanese-settlers",
+    "year": 1902,
+    "date": "c. 1902",
+    "title": "First documented Syrian and Lebanese settlers",
+    "body": [
+      "Families from Ottoman Greater Syria—the region later divided into Syria, Lebanon and other states—were recorded in Trinidad by 1902. Most early migrants were Arabic-speaking Christians seeking economic opportunity and relief from political and social instability."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "site": "Marine Square and east Port of Spain",
+    "source": "NALIS, “Syrian Lebanese”"
+  },
+  {
+    "id": "syrian-lebanese-migration-develops",
+    "year": 1904,
+    "date": "1904–1914",
+    "title": "Syrian-Lebanese migration develops",
+    "body": [
+      "Early settlers included George Habib, Amin Abraham, Abdullah Gabriel and Elias Galy. Most initial migrants were men who lived in boarding houses around Marine Square, George, Duke, Duncan and Charlotte Streets."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "site": "Marine Square; Charlotte Street",
+    "source": "NALIS, “Syrian Lebanese”"
+  },
+  {
+    "id": "peddling-and-family-networks-establish-the-community",
+    "year": 1904,
+    "date": "c. 1904–1920",
+    "title": "Peddling and family networks establish the community",
+    "body": [
+      "Many migrants began as travelling peddlers selling cloth and small goods throughout Trinidad. Established merchants supplied newcomers with goods on credit; earnings were used to support relatives and finance further family migration."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad",
+    "site": "Port of Spain commercial district",
+    "source": "NALIS, “Syrian Lebanese”; Caribbean Beat, “Feast from the East”"
+  },
+  {
+    "id": "syrian-lebanese-community-recorded-in-the-census",
+    "year": 1921,
+    "date": "1921",
+    "title": "Syrian-Lebanese community recorded in the census",
+    "body": [
+      "The 1921 colonial census recorded 108 Trinidad residents whose birthplace was classified as “Arabia,” the administrative category then used for many migrants from Greater Syria."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad",
+    "source": "Census of the Colony of Trinidad and Tobago, 1921, cited in da Silva Lopes and Casson, “From Sugar to Shop”"
+  },
+  {
+    "id": "second-syrian-lebanese-migration-wave",
+    "year": 1925,
+    "date": "Mid-1920s–1939",
+    "title": "Second Syrian-Lebanese migration wave",
+    "body": [
+      "A second migration wave arrived between the world wars, including families from Syria’s Christian Valley and Lebanon. Chain migration reunited families and expanded communities in Port of Spain and San Fernando."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad",
+    "site": "Port of Spain and San Fernando",
+    "source": "NALIS, “Syrian Lebanese”; Besson, “Syrian-Lebanese Community”"
+  },
+  {
+    "id": "legislative-council-gains-elected-members",
+    "year": 1926,
+    "date": "1926",
+    "title": "Legislative Council gains elected members",
+    "body": [
+      "Constitutional reforms expanded elected representation, though British colonial officials retained decisive power."
+    ],
+    "period": "Colonial government",
+    "place": "Port-of-Spain",
+    "source": "Trinidad and Tobago constitutional history records"
+  },
+  {
+    "id": "jewish-refugees-begin-arriving",
+    "year": 1932,
+    "date": "c. 1932–1937",
+    "title": "Jewish refugees begin arriving",
+    "body": [
+      "Small numbers of Jews escaping antisemitism in Central and Eastern Europe began arriving in Trinidad. These arrivals preceded the larger refugee movement following Nazi Germany’s annexation of Austria."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "source": "UWI, Historical Notes on the Jews in Trinidad, SC42"
+  },
+  {
+    "id": "butler-labour-uprisings",
+    "year": 1937,
+    "date": "1937",
+    "title": "Butler labour uprisings",
+    "body": [
+      "Oilfield and sugar-worker protests became a decisive challenge to colonial labour conditions and helped shape the modern trade-union and nationalist movements."
+    ],
+    "period": "Labour movement",
+    "place": "Fyzabad and south Trinidad",
+    "source": "Trinidad and Tobago labour-history records"
+  },
+  {
+    "id": "jewish-refugees-flee-to-trinidad",
+    "year": 1938,
+    "date": "1938–early 1939",
+    "title": "Jewish refugees flee to Trinidad",
+    "body": [
+      "Approximately 500 Jews from Germany, Austria and Czechoslovakia reached Trinidad by the end of 1938. Trinidad became a last-chance refuge because entry initially required a landing deposit rather than a visa."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain and San Fernando",
+    "site": "Port-of-Spain harbour",
+    "source": "Newman, Nearly the New World; Newman, PhD thesis, University of Southampton, 1998"
+  },
+  {
+    "id": "jewish-religious-society-established",
+    "year": 1938,
+    "date": "1938",
+    "title": "Jewish Religious Society established",
+    "body": [
+      "Refugees established Trinidad’s first organized Jewish congregation, the Jewish Religious Society. Community life later included worship spaces, aid organizations, Hebrew classes, Yiddish theatre and social clubs."
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain",
+    "site": "Duke Street",
+    "source": "Jewish Telegraphic Agency, “The Jews of Trinidad”",
+    "media": "https://www.jta.org/archive/behind-the-headlines-the-jews-of-trinidad"
+  },
+  {
+    "id": "trinidad-restricts-refugee-entry",
+    "year": 1939,
+    "date": "Early 1939",
+    "title": "Trinidad restricts refugee entry",
+    "body": [
+      "As applications from European refugees increased, Trinidad’s colonial government prohibited further refugee immigration from Europe, closing an important escape route shortly before the Holocaust escalated."
+    ],
+    "period": "British colonial period",
+    "place": "Trinidad",
+    "source": "Newman, Nearly the New World, 2019"
+  },
+  {
+    "id": "jewish-community-reaches-about-600",
+    "year": 1939,
+    "date": "1939–1940",
+    "title": "Jewish community reaches about 600",
+    "body": [
+      "By March 1940, records counted 585 Jewish refugees in Trinidad. The community became informally known as the “Calypso Jews” or “Calypso Shtetl.”"
+    ],
+    "period": "British colonial period",
+    "place": "Port-of-Spain and San Fernando",
+    "site": "Mucurapo Cemetery, Bet Olam section",
+    "source": "Newman, Nearly the New World; Commonwealth Jewish Council"
+  },
+  {
+    "id": "jewish-refugees-interned-as-enemy-aliens",
+    "year": 1940,
+    "date": "1940–1941",
+    "title": "Jewish refugees interned as “enemy aliens”",
+    "body": [
+      "British colonial authorities interned refugees holding German and Austrian nationality despite their flight from Nazi persecution. Camps operated at St James and Nelson Island; most refugee internments occurred between May 1940 and December 1941."
+    ],
+    "period": "Second World War",
+    "place": "Northwestern Trinidad",
+    "site": "Camp Rented, St James; Nelson Island",
+    "source": "Newman, “Internment,” in The Last Goldfish dossier"
+  },
+  {
+    "id": "refugees-released-under-restrictions",
+    "year": 1943,
+    "date": "1943–1945",
+    "title": "Refugees released under restrictions",
+    "body": [
+      "Remaining Jewish internees were released, but many remained subject to curfews, movement restrictions and police reporting requirements until the war ended."
+    ],
+    "period": "Second World War",
+    "place": "Port-of-Spain",
+    "source": "Newman, Nearly the New World; Commonwealth Jewish Council"
+  },
+  {
+    "id": "universal-adult-suffrage-introduced",
+    "year": 1945,
+    "date": "1945",
+    "title": "Universal adult suffrage introduced",
+    "body": [
+      "Adults gained the vote without property or income qualifications, expanding political participation before self-government and independence."
+    ],
+    "period": "Constitutional reform",
+    "place": "Trinidad and Tobago",
+    "source": "Trinidad and Tobago constitutional history records"
+  },
+  {
+    "id": "jewish-refugees-leave-or-settle-permanently",
+    "year": 1945,
+    "date": "After 1945",
+    "title": "Jewish refugees leave or settle permanently",
+    "body": [
+      "Most refugees subsequently emigrated to the United States, Canada, Venezuela or Palestine, while a smaller number remained and contributed to Trinidad’s commercial and cultural life."
+    ],
+    "period": "Postwar period",
+    "place": "Trinidad",
+    "source": "Newman, Nearly the New World; Jewish Telegraphic Agency"
+  },
+  {
+    "id": "mediterranean-star-founded",
+    "year": 1950,
+    "date": "1950",
+    "title": "Mediterranean Star founded",
+    "body": [
+      "Eight women established the Mediterranean Star, later renamed the Syrian Lebanese Women’s Association of Trinidad and Tobago. It became a centre for charitable work and preserving food, music, dance and other cultural traditions."
+    ],
+    "period": "Late colonial period",
+    "place": "Port-of-Spain",
+    "source": "Syrian Lebanese Women’s Association history; Trinidad and Tobago Newsday"
+  },
+  {
+    "id": "pnm-wins-the-general-election",
+    "year": 1956,
+    "date": "1956",
+    "title": "PNM wins the general election",
+    "body": [
+      "Eric Williams’s People’s National Movement won office, beginning the final phase of British colonial rule and the drive toward independence."
+    ],
+    "period": "Self-government",
+    "place": "Trinidad and Tobago",
+    "source": "Trinidad and Tobago election history"
+  },
+  {
+    "id": "trinidad-and-tobago-becomes-independent",
+    "year": 1962,
+    "date": "31 August 1962",
+    "title": "Trinidad and Tobago becomes independent",
+    "body": [
+      "Trinidad and Tobago became an independent state within the Commonwealth, ending British colonial rule."
+    ],
+    "period": "Independence",
+    "place": "Port of Spain",
+    "source": "Trinidad and Tobago independence records"
+  }
+]

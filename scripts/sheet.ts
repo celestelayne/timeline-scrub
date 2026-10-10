@@ -111,8 +111,7 @@ export function parseSheet(csv: string): SheetResult {
     const date = get('date')
     if (date) result.warnings.push(...dateWarnings(row, year, date))
 
-    const optional = {
-      date,
+    const rest = {
       period: get('period'),
       culturalSeries: get('culturalSeries'),
       place: get('place'),
@@ -123,9 +122,10 @@ export function parseSheet(csv: string): SheetResult {
     result.events.push({
       id: uniqueId(slugify(title), used),
       year,
+      ...(date ? { date } : {}),
       title,
       body: paragraphs(get('description')),
-      ...Object.fromEntries(Object.entries(optional).filter(([, v]) => v !== undefined)),
+      ...Object.fromEntries(Object.entries(rest).filter(([, v]) => v !== undefined)),
     })
   })
 

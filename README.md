@@ -11,7 +11,14 @@ npm run dev     # start the dev server
 npm run build   # typecheck and build
 npm run lint    # oxlint
 npm test        # vitest (once)
+npm run sync    # fetch the Google Sheet and regenerate src/data/events.json
 ```
+
+## Content
+
+Content lives in a public Google Sheet. `npm run sync` fetches it as CSV, validates it, and writes `src/data/events.json` (committed; see `docs/adr/0002-sheet-content-via-build-time-sync.md`). A bad row fails the sync with its sheet row number and leaves the file untouched. To read from a different link, such as a "Publish to web" CSV, set `SHEET_CSV_URL`.
+
+The sheet's columns: `Display date`, `Start year` (negative for BC), `Period`, `Cultural Series`, `Event title`, `Description` (blank line between paragraphs), `Place`, `Related Site`, `Reference`, `Media`. `--` and empty cells mean no value.
 
 ## Structure
 
@@ -22,6 +29,7 @@ src/
   hooks/       usePosition.ts, useInput.ts, useViewportWidth.ts
   components/  Track.tsx
   App.tsx, main.tsx
+scripts/       sheet.ts (parse and validate), sync.ts (fetch and write)
 ```
 
 Rule: nothing in `model/` imports React. Tests sit beside the code they cover (`model/coordinates.test.ts`).
