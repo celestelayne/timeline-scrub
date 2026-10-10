@@ -1,0 +1,3 @@
+# Source content from a Google Sheet through a build-time sync
+
+Timeline content lives in a public Google Sheet so it can be edited without touching code, and `npm run sync` fetches its CSV, validates it, and writes a committed `src/data/events.json` that the app imports. Fetching the sheet at runtime would make edits appear without a deploy, but the app would then need loading and error states, and one bad cell could break the live site. A sync step lets bad data fail loudly on the author's machine, keeps the app free of network dependencies, and makes every content change visible in git. The cost is that an edit needs a sync, a commit, and a deploy before it goes live.
