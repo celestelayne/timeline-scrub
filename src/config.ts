@@ -4,6 +4,8 @@ export const defaults = {
   // geometry
   eventSpacing: 150, // px between events on the track
 
+  gapThreshold: 100, // years between consecutive events before a gap label shows
+
   // motion: pos chases target by this fraction of the remaining distance per frame
   ease: 0.18, // 0 = frozen, 1 = instant
   settleEpsilon: 0.001, // stop animating when closer than this (in index units)
