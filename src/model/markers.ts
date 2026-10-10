@@ -1,6 +1,7 @@
 // Group Timeline Events into Markers: one Marker per distinct year, holding every event at that year.
 // Generic over the event type so it only depends on `year` and the optional typed `date`.
-import { yearLabel } from './format'
+// Explicit extension: scripts/ type-checks this file under nodenext resolution.
+import { yearLabel } from './format.ts'
 
 export interface Marker<E> {
   year: number

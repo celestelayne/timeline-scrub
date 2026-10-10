@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import type { HTMLAttributes } from 'react'
 import { config } from '../config'
-import type { TimelineEvent } from '../data/events'
+import type { TimelineEvent } from '../data/types'
 import { eventLabel } from '../model/format'
 import { computeGaps } from '../model/gaps'
 import type { PxScale } from '../model/scale'
