@@ -1,7 +1,7 @@
 import { useMemo, useReducer } from 'react'
 import { Track } from './components/Track'
 import { TuningPanel } from './components/TuningPanel'
-import { YEARS } from './data/events'
+import { EVENTS, YEARS } from './data/events'
 import { useInput } from './hooks/useInput'
 import { usePosition } from './hooks/usePosition'
 import { useViewportWidth } from './hooks/useViewportWidth'
@@ -35,7 +35,7 @@ interaction ${interaction}`}
         </pre>
       </main>
       <TuningPanel onChange={rerender} />
-      <Track pos={pos} count={YEARS.length} scale={scale} dragging={interaction === 'drag'} trackProps={trackProps} />
+      <Track pos={pos} events={EVENTS} scale={scale} dragging={interaction === 'drag'} trackProps={trackProps} />
     </div>
   )
 }

@@ -71,16 +71,24 @@ body { background: var(--bg); color: var(--ink); }
 }
 
 .strip { position: absolute; inset: 0; will-change: transform; }
-.tick {
+.dot {
   position: absolute;
   top: 56px;
   width: 16px;
   height: 16px;
   box-sizing: border-box;
-  margin-left: -8px;
+  margin: 0 0 0 -8px;
+  padding: 0;
   border: 2px solid var(--ink);
   border-radius: 50%;
   background: var(--bg);
+  cursor: pointer;
+}
+.dot--active { background: var(--ink); }
+.dot:hover,
+.dot:focus-visible {
+  outline: 1.5px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .tuning {
