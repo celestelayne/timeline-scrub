@@ -52,7 +52,7 @@ Equal index spacing is deliberate: time-proportional spacing would crush everyth
 - [x] `useInput.ts` — wheel, pointer drag, arrows
 - [x] `Track.tsx` — track, event ticks, fixed playhead
 - [x] `App.tsx` — year readout, debug panel (`pos` / `target` / interaction state)
-- [ ] Tests — coordinate and scale math
+- [x] Tests — coordinate and scale math
 - [ ] Tune motion
 - [ ] Experiment with snapping
 
