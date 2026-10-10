@@ -145,12 +145,9 @@ describe('the real sheet (fixture snapshot)', () => {
     expect(markers.find((m) => m.year === 1846)?.events).toHaveLength(3)
   })
 
-  it('labels Markers by the shared date, else the year', () => {
-    const label = (year: number) => groupMarkers(result.events).find((m) => m.year === year)?.label
-    expect(label(-5900)).toBe('c. 5900 BC')
-    expect(label(1806)).toBe('1806')
-    expect(label(1846)).toBe('1846')
-    expect(label(650)).toBe('c. AD 650–800')
+  it('keeps each event\'s own Display date inside a shared year', () => {
+    const marker = groupMarkers(result.events).find((m) => m.year === 1806)
+    expect(marker?.events.map((e) => e.date)).toEqual(['12 October 1806', '1 November 1806'])
   })
 
   it('reads "--" as no Cultural Series', () => {

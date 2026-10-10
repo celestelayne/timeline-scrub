@@ -41,30 +41,6 @@ describe('groupMarkers', () => {
   })
 })
 
-describe('marker label', () => {
-  it('uses the typed date when every event in the year agrees', () => {
-    expect(groupMarkers([ev(-5900, 'c. 5900 BC'), ev(-5900, 'c. 5900 BC')])[0].label).toBe('c. 5900 BC')
-  })
-
-  it('uses the typed date for a single event', () => {
-    expect(groupMarkers([ev(650, 'c. AD 650–800')])[0].label).toBe('c. AD 650–800')
-  })
-
-  it('falls back to the plain year when typed dates differ', () => {
-    expect(groupMarkers([ev(1806, '12 October 1806'), ev(1806, '1 November 1806')])[0].label).toBe('1806')
-    expect(groupMarkers([ev(1797, '1797'), ev(1797, '18 February 1797')])[0].label).toBe('1797')
-  })
-
-  it('falls back when only some events have a typed date', () => {
-    expect(groupMarkers([ev(250, 'c. AD 250'), ev(250)])[0].label).toBe('AD 250')
-  })
-
-  it('generates the label when there is no typed date', () => {
-    expect(groupMarkers([ev(-4000)])[0].label).toBe('4000 BC')
-    expect(groupMarkers([ev(1498)])[0].label).toBe('1498')
-  })
-})
-
 describe('with the current hand-typed events', () => {
   it('yields one Marker per event, since every year is distinct', () => {
     expect(groupMarkers(EVENTS)).toHaveLength(EVENTS.length)

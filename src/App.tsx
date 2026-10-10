@@ -1,12 +1,12 @@
 import { useMemo, useReducer } from 'react'
 import { Track } from './components/Track'
 import { TuningPanel } from './components/TuningPanel'
-import { EVENTS, YEARS } from './data/events'
+import { MARKERS, YEARS } from './data/markers'
 import { useInput } from './hooks/useInput'
 import { usePosition } from './hooks/usePosition'
 import { useViewportWidth } from './hooks/useViewportWidth'
 import { posToYear } from './model/coordinates'
-import { yearParts } from './model/format'
+import { yearLabel, yearParts } from './model/format'
 import { config } from './config'
 import { createPxScale } from './model/scale'
 
@@ -19,6 +19,7 @@ export default function App() {
   const scale = useMemo(() => createPxScale(width, eventSpacing), [width, eventSpacing])
 
   const { value, era } = yearParts(posToYear(pos, YEARS))
+  const activeMarker = MARKERS[Math.round(pos)]
 
   return (
     <div className="app">
@@ -31,13 +32,15 @@ export default function App() {
           {`pos         ${pos.toFixed(3)}
 target      ${target.toFixed(3)}
 active      ${Math.round(pos)} / ${YEARS.length - 1}
-interaction ${interaction}`}
+interaction ${interaction}
+\n${yearLabel(activeMarker.year)}
+${activeMarker.events.map((e) => `· ${e.date ?? yearLabel(e.year)}  ${e.title}`).join('\n')}`}
         </pre>
       </main>
       <TuningPanel onChange={rerender} />
       <Track
         pos={pos}
-        events={EVENTS}
+        markers={MARKERS}
         scale={scale}
         dragging={interaction === 'drag'}
         onSelect={setTarget}

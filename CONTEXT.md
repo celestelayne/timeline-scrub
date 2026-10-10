@@ -16,6 +16,14 @@ _Avoid_: Stop, tick, point
 The Marker nearest the Playhead. It is the only one whose Timeline Events are shown, and the only one drawn filled.
 _Avoid_: Current marker, selected marker, hovered marker
 
+**Year**:
+The single number that places a Timeline Event on the timeline (the sheet's Start year, negative for BC). A Marker is positioned and labelled by its Year alone.
+_Avoid_: Date, start date
+
+**Display date**:
+The text a Timeline Event's card shows for when it happened, such as "31 July 1498" or "c. AD 650–800". It can be a day, a range, or an approximation; it never positions anything.
+_Avoid_: Date, label
+
 **Cultural Series**:
 The named culture or tradition a Timeline Event belongs to, such as Saladoid or Barrancoid. A label on an event, not an event itself. Absent for most post-contact events.
 _Avoid_: Culture, tradition, category

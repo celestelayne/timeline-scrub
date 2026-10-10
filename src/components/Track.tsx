@@ -2,29 +2,30 @@ import { useMemo } from 'react'
 import type { HTMLAttributes } from 'react'
 import { config } from '../config'
 import type { TimelineEvent } from '../data/types'
-import { eventLabel } from '../model/format'
+import { yearLabel } from '../model/format'
 import { computeGaps } from '../model/gaps'
+import type { Marker } from '../model/markers'
 import type { PxScale } from '../model/scale'
 
 interface Props {
   pos: number
-  events: readonly TimelineEvent[]
+  markers: readonly Marker<TimelineEvent>[]
   scale: PxScale
   dragging: boolean
   onSelect: (index: number) => void
   trackProps: HTMLAttributes<HTMLElement>
 }
 
-export function Track({ pos, events, scale, dragging, onSelect, trackProps }: Props) {
+export function Track({ pos, markers, scale, dragging, onSelect, trackProps }: Props) {
   const active = Math.round(pos)
   const { eventSpacing } = config
-  const gaps = useMemo(() => computeGaps(events.map((e) => e.year)), [events])
+  const gaps = useMemo(() => computeGaps(markers.map((m) => m.year)), [markers])
 
   return (
     <div className={`track${dragging ? ' track--dragging' : ''}`} {...trackProps}>
       <div className="playhead" />
       <div className="strip" style={{ transform: `translateX(${scale.posToPx(pos)}px)` }}>
-        <div className="bar" style={{ width: (events.length - 1) * eventSpacing }} />
+        <div className="bar" style={{ width: (markers.length - 1) * eventSpacing }} />
         {gaps.map(
           (gap) =>
             gap.label && (
@@ -33,18 +34,18 @@ export function Track({ pos, events, scale, dragging, onSelect, trackProps }: Pr
               </span>
             ),
         )}
-        {events.map((event, i) => (
+        {markers.map((marker, i) => (
           <button
-            key={event.id}
+            key={marker.year}
             type="button"
             className={`event${i === active ? ' event--active' : ''}`}
             style={{ left: i * eventSpacing }}
-            aria-label={`${eventLabel(event)}: ${event.title}`}
+            aria-label={`${yearLabel(marker.year)}: ${marker.events.map((e) => e.title).join('; ')}`}
             aria-current={i === active ? 'true' : undefined}
             onClick={() => onSelect(i)}
           >
             <span className="dot" />
-            <span className="date">{eventLabel(event)}</span>
+            <span className="date">{yearLabel(marker.year)}</span>
           </button>
         ))}
       </div>
