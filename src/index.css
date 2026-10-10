@@ -3,6 +3,7 @@
   --ink: #1d1a16;
   --muted: #8a8174;
   --rule: #d9d2c5;
+  --inactive: #6b6255;
 }
 
 html, body, #root { margin: 0; height: 100%; }
@@ -71,25 +72,54 @@ body { background: var(--bg); color: var(--ink); }
 }
 
 .strip { position: absolute; inset: 0; will-change: transform; }
-.dot {
+.bar {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  height: 4px;
+  background: var(--ink);
+  opacity: 0.2;
+}
+
+.event {
   position: absolute;
   top: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.dot {
   width: 16px;
   height: 16px;
   box-sizing: border-box;
-  margin: 0 0 0 -8px;
-  padding: 0;
   border: 2px solid var(--ink);
   border-radius: 50%;
   background: var(--bg);
-  cursor: pointer;
 }
-.dot--active { background: var(--ink); }
-.dot:hover,
-.dot:focus-visible {
+.event--active .dot { background: var(--ink); }
+.event:hover .dot,
+.event:focus-visible .dot {
   outline: 1.5px solid var(--ink);
   outline-offset: 3px;
 }
+.event:focus-visible { outline: none; }
+
+.date {
+  font: 12px / 1 ui-monospace, 'IBM Plex Mono', monospace;
+  white-space: nowrap;
+  color: var(--inactive);
+}
+.event--active .date { color: var(--ink); }
 
 .tuning {
   position: absolute;
