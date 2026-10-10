@@ -81,6 +81,15 @@ body { background: var(--bg); color: var(--ink); }
   opacity: 0.2;
 }
 
+.gap {
+  position: absolute;
+  top: 40px;
+  transform: translateX(-50%);
+  font: 10px / 1 ui-monospace, 'IBM Plex Mono', monospace;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
 .event {
   position: absolute;
   top: 56px;
