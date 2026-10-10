@@ -11,10 +11,11 @@ interface Props {
   events: readonly TimelineEvent[]
   scale: PxScale
   dragging: boolean
+  onSelect: (index: number) => void
   trackProps: HTMLAttributes<HTMLElement>
 }
 
-export function Track({ pos, events, scale, dragging, trackProps }: Props) {
+export function Track({ pos, events, scale, dragging, onSelect, trackProps }: Props) {
   const active = Math.round(pos)
   const { eventSpacing } = config
   const gaps = useMemo(() => computeGaps(events.map((e) => e.year)), [events])
@@ -40,6 +41,7 @@ export function Track({ pos, events, scale, dragging, trackProps }: Props) {
             style={{ left: i * eventSpacing }}
             aria-label={`${eventLabel(event)}: ${event.title}`}
             aria-current={i === active ? 'true' : undefined}
+            onClick={() => onSelect(i)}
           >
             <span className="dot" />
             <span className="date">{eventLabel(event)}</span>

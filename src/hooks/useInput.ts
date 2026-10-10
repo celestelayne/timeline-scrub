@@ -64,7 +64,6 @@ export function useInput({ target, setTarget, spacing }: Options) {
   }, [setTarget])
 
   const onPointerDown = useCallback((e: PointerEvent<HTMLElement>) => {
-    e.currentTarget.setPointerCapture(e.pointerId)
     drag.current = { id: e.pointerId, startX: e.clientX, startTarget: targetRef.current, active: false }
   }, [])
 
@@ -76,6 +75,8 @@ export function useInput({ target, setTarget, spacing }: Options) {
       if (!d.active) {
         if (Math.abs(dx) <= config.dragThreshold) return
         d.active = true
+        // Capture only once it is a drag; capturing on press would swallow clicks on dots.
+        e.currentTarget.setPointerCapture(e.pointerId)
         setInteraction('drag')
       }
       setTarget(d.startTarget - dx / spacing)

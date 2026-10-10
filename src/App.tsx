@@ -35,7 +35,14 @@ interaction ${interaction}`}
         </pre>
       </main>
       <TuningPanel onChange={rerender} />
-      <Track pos={pos} events={EVENTS} scale={scale} dragging={interaction === 'drag'} trackProps={trackProps} />
+      <Track
+        pos={pos}
+        events={EVENTS}
+        scale={scale}
+        dragging={interaction === 'drag'}
+        onSelect={setTarget}
+        trackProps={trackProps}
+      />
     </div>
   )
 }
