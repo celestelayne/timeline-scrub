@@ -38,7 +38,7 @@ input → target → (ease each frame) → pos → scale → px / year → rende
 | --- | --- |
 | `src/data/events.ts` | Event ids and years (negative = BC). Placeholder data for now. |
 | `src/model/coordinates.ts` | `pos ↔ year`, linear interpolation between neighbouring events. Knows nothing about pixels. |
-| `src/model/scale.ts` | `pos ↔ px` via `d3-scale`. Events are equally spaced (150px) by index, playhead at viewport centre. Knows nothing about time. |
+| `src/model/scale.ts` | `pos ↔ px` via `d3-scale`. Events are equally spaced (90px) by index, playhead at viewport centre. Knows nothing about time. |
 | `src/hooks/usePosition.ts` | `target → eased pos`. Inputs only write `target`; `pos` chases it by 0.18 per frame. No snapping yet. |
 
 Equal index spacing is deliberate: time-proportional spacing would crush everything after 1498. Spacing lives behind `scale.ts`, so changing it is a one-function swap.
@@ -55,7 +55,17 @@ Equal index spacing is deliberate: time-proportional spacing would crush everyth
 - [x] Tests — coordinate and scale math
 - [x] Motion tuning tooling — `src/config.ts` and a live tuning panel (`ease`, `wheelDivisor`, `eventSpacing`)
 
-Event content, images, categories, fonts, persistence, and responsive layout come in later milestones.
+### Milestone 2: events on the track
+
+- [x] Event titles, typed date overrides, and a shared year formatter
+- [x] Gap computation (labels for gaps of 100 years or more)
+- [x] Dots: filled when active, hollow otherwise
+- [x] Date labels and a neutral bar
+- [x] Gap labels on the bar
+- [x] Click a dot or label to jump
+- [x] Spacing tuned to 90px
+
+Next: the Google Sheet data pipeline, then the content panel. Images, fonts, persistence, and responsive layout come later. See `CONTEXT.md` for terms and `docs/adr/` for decisions.
 
 ## Deferred to the end
 

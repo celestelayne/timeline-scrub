@@ -2,7 +2,7 @@
 
 export const defaults = {
   // geometry
-  eventSpacing: 150, // px between events on the track
+  eventSpacing: 90, // px between events on the track
 
   gapThreshold: 100, // years between consecutive events before a gap label shows
 
